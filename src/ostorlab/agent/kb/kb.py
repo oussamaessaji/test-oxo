@@ -4,7 +4,7 @@ import dataclasses
 import json
 import pathlib
 
-from typing import Dict, Optional, Union
+from typing import Optional, Union
 
 KB_FOLDER = "KB"
 META_JSON = "meta.json"
@@ -18,7 +18,7 @@ class Entry:
 
     title: str
     risk_rating: str
-    references: Dict[str, str]
+    references: dict[str, str]
     short_description: str = ""
     description: str = ""
     recommendation: str = ""
